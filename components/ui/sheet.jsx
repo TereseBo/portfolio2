@@ -46,6 +46,7 @@ const sheetVariants = cva(
 const SheetContent = React.forwardRef(({ side = "right", className, children, ...props }, ref) => (
   <SheetPortal>
     <SheetOverlay />
+    <SheetPrimitive.Title></SheetPrimitive.Title>
     <SheetPrimitive.Content ref={ref} className={cn(sheetVariants({ side }), className)} {...props}>
       {children}
       <SheetPrimitive.Close
