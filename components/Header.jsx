@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { Nav } from "./Nav"
+import { MobileNav } from "./Mobilenav"
 
 export function Header() {
     return (
@@ -19,9 +20,7 @@ export function Header() {
                 </div>
                 {/* Nav for mobile */}
                 <div className="xl:hidden">
-                    <Nav />
-                    <Link href="/contact"></Link>
-                    <Button>Hire me</Button>
+                    <MobileNav/>
                 </div>
 
             </div>
