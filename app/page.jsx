@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi"
 import { Socials } from "@/components/Socials";
 import { Photo } from "@/components/Photo";
+import { Statistics } from "@/components/Statistics";
 
 export default function Home() {
   return (
@@ -11,12 +12,12 @@ export default function Home() {
           {/* Presentation text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Fullstack developer</span>
-            <h1 className="h1 mb-6">Hello I'm
+            <h1 className="h1 mb-6">Hello I&apos;m
               <br />
               <span className="text-accent">Terese Bodérus</span>
             </h1>
             <p className="max-w[500px] mb-9 text-white/80"> I have a passion for biology, technology and problem-solving.
-              I'm capable in various programming languages and technologies.
+              I&apos;m capable in various programming languages and technologies.
             </p>
             {/* Social links */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -39,6 +40,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Statistics/>
     </section>
   );
 }
