@@ -171,7 +171,7 @@ export default function Resume() {
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
             }}
-            className="min-h-[80vw] flex items-center justify-center py-12 xl:py-2"
+            className="min-h-[80vw] flex justify-center py-12 xl:py-2"
         >
             <div className="container mx-auto">
                 <Tabs
