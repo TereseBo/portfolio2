@@ -7,6 +7,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { motion } from "framer-motion"
 
+import {phone, email, name} from "@/constants/aboutme"
+
 //TODO: Update personal data 
 //TODO: Update experience data 
 //TODO: Update educational data 
@@ -20,11 +22,11 @@ const about = {
     items: [
         {
             fieldName: "Name",
-            fieldValue: "Terese Bodérus"
+            fieldValue: name
         },
         {
             fieldName: "Phone",
-            fieldValue: "+46"
+            fieldValue: phone
         },
         {
             fieldName: "Experience",
@@ -36,7 +38,7 @@ const about = {
         },
         {
             fieldName: "E-mail",
-            fieldValue: "mail@gmail.com"
+            fieldValue: email
         },
         {
             fieldName: "Freelance",
