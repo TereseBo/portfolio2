@@ -8,10 +8,6 @@ export const navLinks=[
         path:"/"
     },
     {
-        name:"services",
-        path:"/services"
-    },
-    {
         name:"resume",
         path:"/resume"
     },
