@@ -2,27 +2,10 @@
 
 import CountUp from "react-countup"
 import { useState } from "react"
+import { myStats} from "@/constants/myStats"
 
 //TODO:Replace stats with preferablt with something from GitHub API, else calculated numbers
-const myStats = [
-    {
-        num: 1,
-        text: "Years of experience"
-    },
-    {
-        num: 4,
-        text: "Showcased projects"
-    },
-    {
-        num: 10,
-        text: "Technologies"
-    },
-    {
-        prefix: "<",
-        num: 1000,
-        text: "GitHub contributions"
-    },
-]
+
 
 export function Statistics() {
     const [showPrefix, setShowPrefix] = useState(false)
