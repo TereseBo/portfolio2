@@ -1,24 +1,19 @@
 
 "use client"
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaFlask, FaPython } from "react-icons/fa"
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si"
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { motion } from "framer-motion"
 
 import {phone, email, name} from "@/constants/aboutme"
-
-//TODO: Update personal data 
-//TODO: Update experience data 
-//TODO: Update educational data 
-//TODO: Update skill data 
-const loremIpsum = "Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare cursus dui nullam pretium, mauris tellus parturient? Rhoncus suscipit platea suscipit eleifend turpis facilisis mollis. Fringilla urna varius nisi amet litora tellus at interdum nisi. Sed sodales turpis cras purus tellus consequat porttitor. Nascetur a condimentum ex parturient rhoncus lobortis enim."
+import { technologies } from "@/constants/technologies"
+import { education_desc, experience_desc, personal_desc, skill_desc } from "@/constants/resume_texts"
 
 //Personal data
 const about = {
     title: "About me",
-    description: loremIpsum,
+    description: personal_desc,
     items: [
         {
             fieldName: "Name",
@@ -41,10 +36,6 @@ const about = {
             fieldValue: email
         },
         {
-            fieldName: "Freelance",
-            fieldValue: "Available"
-        },
-        {
             fieldName: "Languages",
             fieldValue: "Swedish, English"
         },
@@ -55,7 +46,7 @@ const about = {
 const experience = {
     icon: "assets/resume/badge.svg",
     title: "My experience",
-    description: loremIpsum,
+    description: experience_desc,
     items: [
         {
             company: "Clinical Genomics, SciLifelabs",
@@ -90,7 +81,7 @@ const experience = {
 const education = {
     icon: "assets/resume/cap.svg",
     title: "My education",
-    description: loremIpsum,
+    description: education_desc,
     items: [
         {
             institution: "Nackademin AB",
@@ -133,37 +124,8 @@ const education = {
 //Skill data
 const skills = {
     title: "My skills",
-    description: loremIpsum,
-    items: [
-        {
-            icon: <FaHtml5 />,
-            name: "html 5"
-        },
-        {
-            icon: <FaCss3 />,
-            name: "css 3"
-        },
-        {
-            icon: <FaJs />,
-            name: "javascript"
-        },
-        {
-            icon: <FaNodeJs />,
-            name: "node.js"
-        },
-        {
-            icon: <FaReact />,
-            name: "React.js"
-        },
-        {
-            icon: <SiNextdotjs />,
-            name: "Next.js"
-        },
-        {
-            icon: <SiTailwindcss />,
-            name: "tailwind.css"
-        },
-    ]
+    description: skill_desc,
+    items: technologies
 }
 export default function Resume() {
     return (

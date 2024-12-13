@@ -1,4 +1,6 @@
+
 import { nrOfShowcasedProjects } from "./projects"
+import { nrOfTechnologies } from "./technologies"
 
 export const myStats = [
     {
@@ -10,7 +12,7 @@ export const myStats = [
         text: "Showcased projects",
     },
     {
-        num: 10,
+        num: nrOfTechnologies,
         text: "Technologies"
     },
     {

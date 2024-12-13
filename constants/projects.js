@@ -1,3 +1,5 @@
+
+//Projects showcased in the portfolio
 export const projects = [
     {
         num: "01",
@@ -56,6 +58,8 @@ export const projects = [
     }
 ]
 
-export const nrOfShowcasedProjects=projects.length
+//Number of projects for use in stats
+export const nrOfShowcasedProjects = projects.length
+
 
 
