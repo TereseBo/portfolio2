@@ -2,6 +2,7 @@ import { Socials } from "@/components/Socials";
 import { Photo } from "@/components/Photo";
 import { Statistics } from "@/components/Statistics";
 import { DownloadCV } from "@/components/Downloadcv";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,12 +16,16 @@ export default function Home() {
               <br />
               <span className="text-accent">Terese Bodérus</span>
             </h1>
-            <p className="max-w[500px] mb-9 text-white/80"> I have a passion for biology, technology and problem-solving.
-              I&apos;m capable in various programming languages and technologies.
+            <p className="max-w[500px] mb-9 text-white/80">
+              I have a passion for biology, technology and problem-solving. I thrive in dynamic environments and am excited 
+              to contribute to innovative projects that make an impact. I am eager to take on challenges that allow me to leverage 
+              my analytical mindset and technical expertise. If you’re looking for someone who brings both creativity and problem-solving 
+              skills to the table, let's <Link className="text-accent" href="/contact">connect</Link>!
+
             </p>
             {/* Social links */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <DownloadCV className={"uppercase flex items-center gap-2"}/>
+              <DownloadCV className={"uppercase flex items-center gap-2"} />
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
@@ -32,11 +37,11 @@ export default function Home() {
           </div>
           {/* photo */}
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            <Photo/>
+            <Photo />
           </div>
         </div>
       </div>
-      <Statistics/>
+      <Statistics />
     </section>
   );
 }
