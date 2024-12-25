@@ -2,7 +2,7 @@
 
 import CountUp from "react-countup"
 import { useState } from "react"
-import { myStats} from "@/constants/mystats"
+import { myStats} from "@/constants/aboutme"
 
 //TODO:Replace stats with preferablt with something from GitHub API, else calculated numbers
 

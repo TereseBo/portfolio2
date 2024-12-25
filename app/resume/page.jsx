@@ -6,122 +6,37 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { motion } from "framer-motion"
 
-import {phone, email, name} from "@/constants/aboutme"
-import { technologies } from "@/constants/technologies"
-import { education_desc, experience_desc, personal_desc, skill_desc } from "@/constants/resume_texts"
 
-//Personal data
+import { technologies } from "@/constants/resume/technologies"
+import { education_desc, experience_desc, personal_desc, skill_desc } from "@/constants/resume/resume_texts"
+import { personal_data } from "@/constants/resume/personal_data"
+import { education_data } from "@/constants/resume/education_data"
+import { experience_data } from "@/constants/resume/experience_data"
+
+//About
 const about = {
     title: "About me",
     description: personal_desc,
-    items: [
-        {
-            fieldName: "Name",
-            fieldValue: name
-        },
-        {
-            fieldName: "Phone",
-            fieldValue: phone
-        },
-        {
-            fieldName: "Experience",
-            fieldValue: "1 year"
-        },
-        {
-            fieldName: "Nationality",
-            fieldValue: "Swedish"
-        },
-        {
-            fieldName: "E-mail",
-            fieldValue: email
-        },
-        {
-            fieldName: "Languages",
-            fieldValue: "Swedish, English"
-        },
-    ]
+    items: personal_data
 }
 
-//Experience data
+//Experience
 const experience = {
     icon: "assets/resume/badge.svg",
     title: "My experience",
     description: experience_desc,
-    items: [
-        {
-            company: "Clinical Genomics, SciLifelabs",
-            position: "Fullstack developer intern",
-            duration: "Oct 2023 - Apr 2024"
-        },
-        {
-            company: "Centre for rare diseases",
-            position: "Information Scientist",
-            duration: "Sept 2020 - Present"
-        },
-        {
-            company: "Department of Clinical Genetics",
-            position: "Laboratory technichian",
-            duration: "Jun 2014 - Aug 2022"
-        },
-        {
-            company: "Department of Clinical Genetics",
-            position: "Education coordinator",
-            duration: "Apr 2021 - Feb 2022"
-        },
-        {
-            company: "Department of Clinical Genetics",
-            position: "Student coordinator",
-            duration: "Aug 2018 - Dec 2021"
-        },
-    ]
+    items: experience_data
+
 }
-
-//Education data
-
+//Education
 const education = {
     icon: "assets/resume/cap.svg",
     title: "My education",
     description: education_desc,
-    items: [
-        {
-            institution: "Nackademin AB",
-            degree: "Full stack web developer, open source",
-            duration: "Sep 2022 - May 2024"
-        },
-        {
-            institution: "Karolinska Institutet",
-            degree: "Bachelor of Medical Sciences in laboratory science",
-            duration: "Sep 2011 - Jun 2014"
-        },
-        {
-            institution: "Nackademin AB",
-            degree: "Full stack web developer, open source",
-            duration: "Sep 2022 - May 2024"
-        },
-        {
-            institution: "Nackademin AB",
-            degree: "Full stack web developer, open source",
-            duration: "Sep 2022 - May 2024"
-        },
-        {
-            institution: "Nackademin AB",
-            degree: "Full stack web developer, open source",
-            duration: "Sep 2022 - May 2024"
-        },
-        {
-            institution: "Nackademin AB",
-            degree: "Full stack web developer, open source",
-            duration: "Sep 2022 - May 2024"
-        },
-        {
-            institution: "Nackademin AB",
-            degree: "Full stack web developer, open source",
-            duration: "Sep 2022 - May 2024"
-        },
-    ]
+    items: education_data
 }
 
-//Skill data
+//Skills
 const skills = {
     title: "My skills",
     description: skill_desc,
@@ -241,7 +156,7 @@ export default function Resume() {
 
                         </TabsContent>
                         {/* about me */}
-                     
+
                         <TabsContent value="about" className="w-full text-center xl:text-left">
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className="text-4xl font-bold">{about.title}</h3>

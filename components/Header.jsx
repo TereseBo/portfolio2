@@ -15,12 +15,13 @@ export function Header() {
                 {/* Nav for desktop */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
-                    <Link href="/contact"></Link>
-                    <Button>Hire me</Button>
+                    <Link href="/contact">
+                        <Button>Hire me</Button>
+                    </Link>
                 </div>
                 {/* Nav for mobile */}
                 <div className="xl:hidden">
-                    <MobileNav/>
+                    <MobileNav />
                 </div>
 
             </div>

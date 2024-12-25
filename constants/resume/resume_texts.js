@@ -1,7 +1,3 @@
-//TODO: Update personal data 
-//TODO: Update experience data 
-//TODO: Update educational data 
-//TODO: Update skill data 
 
 export const personal_desc=`I am passionate about problem-solving and thrive in environments where I 
 can apply my analytical skills to complex challenges.  My background in health care, combined with web development expertise,
