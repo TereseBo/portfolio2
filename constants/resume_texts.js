@@ -4,23 +4,17 @@
 //TODO: Update skill data 
 
 export const personal_desc=`I am passionate about problem-solving and thrive in environments where I 
-can apply my analytical skills to complex challenges. My background in genetics combined with my skills in web development 
-allows me to approach problems from both a scientific and technical perspective.
-I strive to deliver innovative solutions in the intersection of healthcare and technology.`
+can apply my analytical skills to complex challenges.  My background in health care, combined with web development expertise,
+ enables me to approach challenges from both scientific and technical perspectives and I thrive on the intersection of these fields.`
 
-export const experience_desc=`After many years working in genetics, including prenatal diagnostics and chromosomal analysis, 
-I shifted focus to programming to enhance my skills and improve workflow efficiency. In my current role as an Information Scientist at the Centre for Rare Diseases,
- I’ve developed Office scripts and a small application to streamline the creation of custom ORPHAcodes, improving data handling and accuracy. 
- This experience has allowed me to grow my programming abilities while optimizing daily operations. 
-`
+export const experience_desc=`After many years working in genetics, I shifted focus to programming to enhance my skills.
+ In my current role I'm applying my programming skills to enhance operational efficiency and data handling, allowing me to grow my programming abilities
+  while optimizing daily operations.`
 
-export const education_desc=`I am a licensed biomedical analyst with additional training in bioinformatics,
- NGS analysis, and project management. Most recently, I completed a higher vocational education in full-stack 
- web development, where I gained skills in JavaScript, React, Next.js, and TypeScript. During my 5-month internship, 
- I further developed my programming skills, including Python, and contributed to the development of software for 
- visualizing gene sequencing results.`
+export const education_desc=`My educational background combines both scientific and technical expertise. I hold a degree in Biomedical Laboratory Science, which has provided me with a strong foundation in research and analytical skills. 
+Additionally, I have completed a Higher Vocational Education program as a Fullstack Web Developer, equipping me with practical knowledge and experience in web development. This unique combination allows me to approach challenges 
+from both a scientific and technical perspective, continually enhancing my skills through ongoing learning`
 
-export const skill_desc=`I have strong programming skills in several languages including JavaScript, 
-React, Next.js, TypeScript, and Python. During my internship, I applied these skills to real-world projects,
- such as creating software to visualize genetic data, and I continuously seek to improve my expertise in both 
- web development and data handling.`
+export const skill_desc=`I have strong programming skills in several languages and appreciate learning new ones. My skill set including JavaScript, 
+React, Next.js, TypeScript, and Python. I have applied these skills to real-world projects, both during the internship which was part of my education
+and in my day to day work.`
