@@ -2,7 +2,6 @@ import { Socials } from "@/components/Socials";
 import { Photo } from "@/components/Photo";
 import { Statistics } from "@/components/Statistics";
 import { DownloadCV } from "@/components/Downloadcv";
-import { introText } from "@/constants/landingpage.jsx";
 import Link from "next/link";
 
 export default function Home() {
