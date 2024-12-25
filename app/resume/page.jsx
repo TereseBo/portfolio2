@@ -125,10 +125,13 @@ export default function Resume() {
                                                     <span className="text-accent">
                                                         {item.duration}
                                                     </span>
-                                                    <h3 className="text-xl max-w-[360px] min-h-[60px]
+                                                    <div>
+                                                        <h3 className="text-xl max-w-[360px] min-h-[60px]
                                                     text-center lg:text-left">
-                                                        {item.degree}
-                                                    </h3>
+                                                            {item.degree}
+                                                        </h3>
+                                                        <p className="text-white/60">{item.points}</p>
+                                                    </div>
                                                     <div className="flex items-center gap-3">
                                                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                                                         <p className="text-white/60">{item.institution}</p>
@@ -161,8 +164,8 @@ export default function Resume() {
                                                     <div className="flex items-start gap-3">
                                                         <span className="w-[6px] h-[6px] rounded-full bg-accent mt-3 shrink-0"></span>
                                                         <div>
-                                                        <p className="text-white/60">{item.company},</p>
-                                                        <p className="text-white/60">{item.location}</p>
+                                                            <p className="text-white/60">{item.company},</p>
+                                                            <p className="text-white/60">{item.location}</p>
                                                         </div>
                                                     </div>
                                                 </li>
