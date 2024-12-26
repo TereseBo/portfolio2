@@ -16,8 +16,9 @@ export const projects = [
 
         ],
         image: "/assets/projects/scoutcase.PNG",
-        live: "https://clinical-genomics.github.io/scout/",
+        live: "",
         github: "https://github.com/Clinical-Genomics/scout",
+        docs:"https://clinical-genomics.github.io/scout/",
         alt: "Image of a case with one pinned and one causative varuiant in the scout application"
     },
     {
@@ -37,6 +38,7 @@ export const projects = [
         image: "/assets/projects/orphalist.PNG",
         live: "",
         github: "https://github.com/TereseBo/orpha_table",
+        docs:"",
         alt: "Image description"
     },
     {
@@ -57,6 +59,7 @@ export const projects = [
         image: "/assets/projects/weaverlibrary.PNG",
         live: "https://nextweave.vercel.app/weaver",
         github: "https://github.com/TereseBo/nextweave",
+        docs:"",
         alt: "Weavingdraft with 3 shafts and 3 treadles made in the weaver application"
     },
     {
@@ -75,6 +78,7 @@ export const projects = [
         image: "/assets/projects/mendeler.PNG",
         live: "https://teresebo.github.io/game",
         github: "https://github.com/TereseBo/mendeler",
+        docs:"",
         alt: "The game mendeler where the user may cross peas demonstrating mendelian inheritance. Green and gnarly peas are shown in the picture displaying traits from both parents."
     }
 ]
