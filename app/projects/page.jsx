@@ -15,7 +15,6 @@ import { SliderBtns } from "@/components/SliderBtns"
 
 import { projects } from "@/constants/projects"
 
-const loremIpsum = "Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare cursus dui nullam pretium, mauris tellus parturient?"
 
 export default function Work() {
     const [project, setProject] = useState(projects[0])
@@ -39,7 +38,7 @@ export default function Work() {
                         {/* Main project info */}
                         <div className="flex flex-col gap-[30px] h-[50%]">
                             {/* Outlined number */}
-                            <div className="text-8xl leading-none font-extra-bold text-transparent text-outline">
+                            <div className="text-6xl leading-none font-extra-bold text-transparent text-outline">
                                 {project.num}
                             </div>
                             {/* projects info */}
@@ -65,7 +64,7 @@ export default function Work() {
                             {/* buttons */}
                             <div className="flex items-center gap-4">
                                 {/* live project button */}
-                                <Link href={project.live}>
+                                <Link href={project.live} target="_blank">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full
@@ -79,7 +78,7 @@ export default function Work() {
                                     </TooltipProvider>
                                 </Link>
                                 {/* Github project button */}
-                                <Link href={project.github}>
+                                <Link href={project.github} target="_blank">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full
