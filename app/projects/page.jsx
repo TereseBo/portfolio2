@@ -115,24 +115,20 @@ export default function Work() {
                             {projects.map((item, index) => {
                                 return (
                                     <SwiperSlide key={index} className="w-full">
-                                        <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                                            <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                        <div className="h-[460px] relative group flex justify-center items-center rounded-lg">
+                                            <div className="absolute top-0 bottom-0 w-full h-full rounded-lg z-10"></div>
                                             <div className="relative w-full h-full">
-                                                <Image src={project.image} fill className="object-cover" alt={project.alt} />
+                                                <Image src={project.image} fill className="object-cover rounded-lg" alt={project.alt} />
                                             </div>
-
                                         </div>
                                     </SwiperSlide>)
                             })}
                             {/* Buttons for slider */}
-                            {/* TODO: Restyle horrid buttons */}
-                            {/* TODO: Restyle equally horrid placement of buttons for xl screen */}
                             <SliderBtns
-                                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                                btnStyles="bg-black/10 hover:bg-white/20 rounded-md text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between "
+                                btnStyles="bg-primary/60 xl:bg-white/20 hover:bg-white/20 xl:hover:bg-white/10 hover:text-primary/60 xl:hover:text-white/10 mx-0 rounded-md text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                                 iconStyles=""
                             />
-
                         </Swiper>
                     </div>
                 </div>
