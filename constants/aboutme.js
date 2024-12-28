@@ -13,21 +13,21 @@ export const nationality="Swedish"
 
 
 export const myStats = [
-    {
-        num: 1,
-        text: "Years of experience"
-    },
+
     {
         num: nrOfShowcasedProjects,
         text: "Showcased projects",
+        linkprops:{href:"/projects"}
     },
     {
         num: nrOfTechnologies,
-        text: "Technologies"
+        text: "Technologies",
+        linkprops:{href:"/resume"}
     },
     {
         prefix: "<",
         num: 1000,
-        text: "GitHub contributions"
-    },
+        text: "GitHub contributions",
+        linkprops:{href:"https://github.com/TereseBo", target:"_blank"}
+    }
 ]
