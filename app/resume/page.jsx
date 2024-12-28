@@ -77,7 +77,7 @@ export default function Resume() {
                                         return (<li key={index}>
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
-                                                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] hover:text-accent rounded-xl flex justify-center items-center">
+                                                    <TooltipTrigger className="w-full h-[150px] bg-secondary hover:text-accent rounded-xl flex justify-center items-center">
                                                         <div className="text-6xl  transition-all duration-300">
                                                             {item.icon}
                                                         </div>
@@ -99,7 +99,7 @@ export default function Resume() {
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
                                 <p className="max-w-[600px] xl:max-w-[800px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] xl:max-w-[820px] mx-auto xl:mx-0 bg-[#232329] py-6 px-10 xl:px-0 rounded-xl ">
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] xl:max-w-[820px] mx-auto xl:mx-0 bg-secondary py-6 px-10 xl:px-0 rounded-xl ">
                                     {about.items.map((item, index) => {
                                         return (
                                             <li key={index} className="flex items-center justify-center xl:justify-start gap-4 text-nowrap xl:ps-10">
@@ -120,7 +120,7 @@ export default function Resume() {
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                         {education.items.map((item, index) => {
                                             return (
-                                                <li key={index} className="bg-[#232329] py-6 px-10 rounded-xl 
+                                                <li key={index} className="bg-secondary py-6 px-10 rounded-xl 
                                                 flex flex-col justify-center items-center lg:items-start gap-1">
                                                     <span className="text-accent">
                                                         {item.duration}
@@ -152,7 +152,7 @@ export default function Resume() {
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                         {experience.items.map((item, index) => {
                                             return (
-                                                <li key={index} className="bg-[#232329] py-6 px-10 rounded-xl 
+                                                <li key={index} className="bg-secondary py-6 px-10 rounded-xl 
                                                 flex flex-col justify-center items-center lg:items-start gap-3">
                                                     <span className="text-accent">
                                                         {item.duration}

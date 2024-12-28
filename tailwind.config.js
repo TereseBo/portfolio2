@@ -18,11 +18,12 @@ module.exports = {
 			xl: "1200px",
 		},
 		fontFamily:{
-			primary:"var(--font-jetbrainsMono)"
+			primary:"var(--font-robotoMono)"
 		},
 		extend: {
 			colors: {
-				primary:"#1c1c22",
+				primary:"#050514",
+				secondary:"#1b1b2b",
 				accent:{
 					DEFAULT:"#00ff99",
 					hover: "#00e187",

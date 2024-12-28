@@ -82,7 +82,7 @@ export default function Contact() {
                     {/* Contact form  */}
                     {!formSent ?
                         <div className="xl:w-[54%] order-2 xl:order-none">
-                            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={handleSubmit} onChange={(e) => saveChange(e)}>
+                            <form className="flex flex-col gap-6 p-10 bg-secondary rounded-xl" onSubmit={handleSubmit} onChange={(e) => saveChange(e)}>
                                 <h3 className="text-4xl text-accent ">Let's work together!</h3>
                                 <p className="text-white/60">Tell me who you are and how to get in touch</p>
                                 <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -97,7 +97,7 @@ export default function Contact() {
                             </form>
                         </div> :
                         <div className="xl:w-[54%] order-2 xl:order-none">
-                            <div className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" >
+                            <div className="flex flex-col gap-6 p-10 bg-secondary rounded-xl" >
                                 <h3 className="text-4xl text-accent ">Thank you for your message!</h3>
                                 <p className="text-white/60">I'll get back to you as soon as possible</p>
                                 <Button size="md" className="max-w-100 self-end xl:self-end bg-primary text-white/60 hover:bg-accent/10" onClick={toggleForm}>Send another message</Button>
@@ -111,7 +111,7 @@ export default function Contact() {
                             {info.map((item, index) => {
                                 return (
                                     <li key={index} className="flex items-center gap-6">
-                                        <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                                        <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
                                             <div>{item.icon}</div>
                                         </div>
                                         <div className="flex-1">

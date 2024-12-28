@@ -68,7 +68,7 @@ export default function Work() {
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full
-                                             bg-white/5 flex justify-center items-center group">
+                                             bg-secondary flex justify-center items-center group">
                                                 <BsGithub className="text-white text-3xl group-hover:text-accent" />
                                             </TooltipTrigger>
                                             <TooltipContent>
@@ -83,7 +83,7 @@ export default function Work() {
                                         <TooltipProvider delayDuration={100}>
                                             <Tooltip>
                                                 <TooltipTrigger className="w-[70px] h-[70px] rounded-full
-                                             bg-white/5 flex justify-center items-center group">
+                                             bg-secondary flex justify-center items-center group">
                                                     <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                                                 </TooltipTrigger>
                                                 <TooltipContent>
@@ -98,7 +98,7 @@ export default function Work() {
                                         <TooltipProvider delayDuration={100}>
                                             <Tooltip>
                                                 <TooltipTrigger className="w-[70px] h-[70px] rounded-full
-                                             bg-white/5 flex justify-center items-center group">
+                                             bg-secondary flex justify-center items-center group">
                                                     <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                                                 </TooltipTrigger>
                                                 <TooltipContent>
@@ -126,7 +126,7 @@ export default function Work() {
                             {/* Buttons for slider */}
                             <SliderBtns
                                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between "
-                                btnStyles="bg-primary/60 xl:bg-white/20 hover:bg-white/20 xl:hover:bg-white/10 hover:text-primary/60 xl:hover:text-white/10 mx-0 rounded-md text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                                btnStyles="bg-primary/60 xl:bg-secondary/60 hover:bg-secondary/20 xl:hover:bg-secondary/20 hover:text-primary/60 xl:hover:text-accent/20 mx-0 rounded-md text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                                 iconStyles=""
                             />
                         </Swiper>
