@@ -93,14 +93,14 @@ export default function Contact() {
                                 </div>
                                 <p className="text-white/60">Please tell me which topic you would like to discuss:</p>
                                 <Textarea id="message" className="h-[200px]" placeholder="Write your message here" />
-                                <Button size="md" className="max-w-40 self-center xl:self-end">Send message</Button>
+                                <Button size="md" className="max-w-40 self-center xl:self-end text-secondary hover:text-[#a4a4aa]">Send message</Button>
                             </form>
                         </div> :
                         <div className="xl:w-[54%] order-2 xl:order-none">
                             <div className="flex flex-col gap-6 p-10 bg-secondary rounded-xl" >
                                 <h3 className="text-4xl text-accent ">Thank you for your message!</h3>
                                 <p className="text-white/60">I'll get back to you as soon as possible</p>
-                                <Button size="md" className="max-w-100 self-end xl:self-end bg-primary text-white/60 hover:bg-accent/10" onClick={toggleForm}>Send another message</Button>
+                                <Button size="md" className="max-w-100 self-end xl:self-end bg-accent text-secondary hover:text-[#a4a4aa]" onClick={toggleForm}>Send another message</Button>
 
                             </div>
                         </div>}

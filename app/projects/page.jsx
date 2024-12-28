@@ -59,8 +59,7 @@ export default function Work() {
                                         </li>)
                                 })}
                             </ul>
-                            {/*Divider between text and links*/}
-                            <div className="border border-white/20"></div>
+
                             {/*Button links */}
                             <div className="flex items-center gap-4">
                                 {/* Github link */}

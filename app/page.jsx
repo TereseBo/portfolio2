@@ -3,6 +3,7 @@ import { Photo } from "@/components/Photo";
 import { Statistics } from "@/components/Statistics";
 import { DownloadCV } from "@/components/Downloadcv";
 import Link from "next/link";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -17,9 +18,9 @@ export default function Home() {
               <span className="text-accent">Terese Bodérus</span>
             </h1>
             <p className="max-w[500px] mb-9 text-white/80">
-              I have a passion for biology, technology and problem-solving. I thrive in dynamic environments and am excited 
-              to contribute to innovative projects that make an impact. I am eager to take on challenges that allow me to leverage 
-              my analytical mindset and technical expertise. If you’re looking for someone who brings both creativity and problem-solving 
+              I have a passion for biology, technology and problem-solving. I thrive in dynamic environments and am excited
+              to contribute to innovative projects that make an impact. I am eager to take on challenges that allow me to leverage
+              my analytical mindset and technical expertise. If you’re looking for someone who brings both creativity and problem-solving
               skills to the table, let's <Link className="text-accent" href="/contact">connect</Link>!
 
             </p>
@@ -40,6 +41,11 @@ export default function Home() {
             <Photo />
           </div>
         </div>
+      </div>
+      <Skills />
+      {/*Divider*/}
+      <div className="container mx-auto">
+        <div className="border border-white/20 m-16"></div>
       </div>
       <Statistics />
     </section>

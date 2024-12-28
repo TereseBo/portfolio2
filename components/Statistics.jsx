@@ -16,7 +16,7 @@ export function Statistics() {
                     {myStats.map((stat, index) => {
                         return (
                             <Link {...stat.linkprops} key={index} >
-                                <div key={index} className="flex-1 flex gap-4 items-center justify-start text-white/80 hover:text-accent">
+                                <div key={index} className="flex-1 flex gap-4 p-4 items-center justify-start text-white/80 hover:text-accent">
                                     <div className="gap-1 flex items-center justify-start">
                                         <CountUp
 
@@ -25,7 +25,7 @@ export function Statistics() {
                                             duration={5}
                                             delay={2}
                                             separator=""
-                                            className="text-4xl xl:text-6xl font-extrabold text-white"
+                                            className="text-4xl xl:text-6xl font-extrabold text-white/80"
                                         />
                                         {stat.prefix ? (<div className={`text-2xl xl:text-4xl font-extrabold ${showPrefix ? "text-accent" : "text-transparent"}`}>{stat.prefix}</div>) : null}
                                     </div>

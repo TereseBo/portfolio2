@@ -16,7 +16,7 @@ export function Header() {
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
                     <Link href="/contact">
-                        <Button>Hire me</Button>
+                        <Button className="text-secondary hover:text-[#a4a4aa]" >Hire me</Button>
                     </Link>
                 </div>
                 {/* Nav for mobile */}
