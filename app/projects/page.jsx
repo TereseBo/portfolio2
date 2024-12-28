@@ -110,12 +110,13 @@ export default function Work() {
                             </div>
                         </div>
                     </div>
+                    {/* Swiper image */}
                     <div className="w-full xl:w-[50%]">
                         <Swiper spaceBetween={30} slidesPerView={1} onSlideChange={handleSlideChange} className="xl:h-[520px] mb-12">
                             {projects.map((item, index) => {
                                 return (
                                     <SwiperSlide key={index} className="w-full">
-                                        <div className="h-[460px] relative group flex justify-center items-center rounded-lg">
+                                        <div className="h-[460px] relative group flex justify-center items-center rounded-lg border border-secondary ">
                                             <div className="absolute top-0 bottom-0 w-full h-full rounded-lg z-10"></div>
                                             <div className="relative w-full h-full">
                                                 <Image src={project.image} fill className="object-cover rounded-lg" alt={project.alt} />

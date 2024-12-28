@@ -17,31 +17,31 @@ module.exports = {
 			lg: "960px",
 			xl: "1200px",
 		},
-		fontFamily:{
-			primary:"var(--font-robotoMono)"
+		fontFamily: {
+			primary: "var(--font-robotoMono)"
 		},
 		extend: {
 			colors: {
-				primary:"#050514",
-				secondary:"#1b1b2b",
-				accent:{
-					DEFAULT:"#00ff99",
-					hover: "#00e187",
+				primary: "#050514",
+				secondary: "#1b1b2b",
+				accent: {
+					DEFAULT: "#ff7700",
+					hover: "#c45d02",
 				}
 			},
-			keyframes:{
-				"accordion-down":{
-					from:{height:"0"},
-					to:{height: "var(--radix-accordion-content-height)"},
+			keyframes: {
+				"accordion-down": {
+					from: { height: "0" },
+					to: { height: "var(--radix-accordion-content-height)" },
 				},
-				"accordion-up":{
-					from:{height: "var(--radix-accordion-content-height)"},
-					to:{height:"0"},
+				"accordion-up": {
+					from: { height: "var(--radix-accordion-content-height)" },
+					to: { height: "0" },
 				}
 			},
-			animation:{
-				"accordion-down":"accordion-down 0.2s ease-out",
-				"accordion-up":"accordion-up 0.2s ease-out",
+			animation: {
+				"accordion-down": "accordion-down 0.2s ease-out",
+				"accordion-up": "accordion-up 0.2s ease-out",
 			},
 
 		}
