@@ -19,7 +19,7 @@ export const projects = [
         live: "",
         github: "https://github.com/Clinical-Genomics/scout",
         docs:"https://clinical-genomics.github.io/scout/",
-        alt: "Image of a case with one pinned and one causative varuiant in the scout application"
+        alt: "Image of a case with one pinned and one causative varuiant in the scout application."
     },
     {
         num: "02",
@@ -33,13 +33,14 @@ export const projects = [
             { name: "Next.js" },
             { name: "Tailwind" },
             { name: "Javascript" },
+            { name: "RD-code API" },
 
         ],
         image: "/assets/projects/orphalist.PNG",
         live: "",
         github: "https://github.com/TereseBo/orpha_table",
         docs:"",
-        alt: "Image description"
+        alt: "Landing page of the Orpha-table application showing the searchresult for ORPHA:69 and a list of previously selected ORPHAcodes."
     },
     {
         num: "03",
@@ -60,7 +61,7 @@ export const projects = [
         live: "https://nextweave.vercel.app/weaver",
         github: "https://github.com/TereseBo/nextweave",
         docs:"",
-        alt: "Weavingdraft with 3 shafts and 3 treadles made in the weaver application"
+        alt: "Weavingdraft with 3 shafts and 3 treadles made in the weaver application."
     },
     {
         num: "04",
