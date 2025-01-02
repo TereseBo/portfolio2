@@ -13,8 +13,8 @@ export function Photo() {
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { delay: 2, duration: 0.4, ease: "easeInOut" } }}
-                    className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
-                    <Image src="/assets/photo_round.png" priority quality={100} fill alt="Image of me" className="object-contain" />
+                    className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute left-1">
+                    <Image src="/assets/cropped_image.PNG" priority quality={100} fill alt="Image of me" className="object-contain" />
                 </motion.div>
 
                 {/* image border */}
