@@ -5,25 +5,29 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import {phone, email} from "@/constants/aboutme"
+import { phone, email } from "@/constants/aboutme"
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const info = [
     {
         icon: <FaPhoneAlt />,
-        title: "Phone", 
-        description: phone
+        title: "Phone",
+        description: phone,
+        link: `tel:${phone.replaceAll(" ", "")}`
     },
     {
         icon: <FaEnvelope />,
         title: "Email",
-        description: email
+        description: email,
+        link: `mailto:${email}`
     },
     {
         icon: <FaMapMarkerAlt />,
         title: "Location",
-        description: "Stockholm"
+        description: "Stockholm",
+        link: "https://en.wikipedia.org/wiki/Stockholm"
     },
 ]
 
@@ -38,8 +42,8 @@ export default function Contact() {
         service: "",
         message: ""
     })
-    function toggleForm(){
-        SetFormSent(prevValue=>{return !prevValue})
+    function toggleForm() {
+        SetFormSent(prevValue => { return !prevValue })
     }
     function saveChange(e) {
         setFormValues(prevValues => { return { ...prevValues, [e.target.id]: e.target.value } });
@@ -111,9 +115,10 @@ export default function Contact() {
                             {info.map((item, index) => {
                                 return (
                                     <li key={index} className="flex items-center gap-6">
-                                        <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
+                                        <Link className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center"
+                                            href={item.link} target="_blank">
                                             <div>{item.icon}</div>
-                                        </div>
+                                        </Link>
                                         <div className="flex-1">
                                             <p className="text-white/60">{item.title}</p>
                                             <h3 className="text-xl">{item.description}</h3>
