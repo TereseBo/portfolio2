@@ -11,6 +11,7 @@ import { education_desc, experience_desc, personal_desc, skill_desc } from "@/co
 import { personal_data } from "@/constants/resume/personal_data"
 import { education_data } from "@/constants/resume/education_data"
 import { experience_data } from "@/constants/resume/experience_data"
+import { DownloadCV } from "@/components/Downloadcv"
 
 //About
 const about = {
@@ -61,7 +62,9 @@ export default function Resume() {
                         <TabsTrigger value="about">About me</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
                         <TabsTrigger value="experience">Experience</TabsTrigger>
+                        <DownloadCV className={"justify-self-center mt-8 uppercase flex items-center gap-2"} />
                     </TabsList>
+
 
                     {/*Tab contents */}
                     <div className="min-h-[70vh] w-full">
