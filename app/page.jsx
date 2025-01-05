@@ -17,11 +17,14 @@ export default function Home() {
               <br />
               <span className="text-accent">Terese Bodérus</span>
             </h1>
-            <p className="max-w[500px] mb-9 text-white/80">
+            <p className="max-w[500px] mb-9 mx-2 text-white/80">
+              If you’re looking for someone who brings both creativity and problem-solving
+              skills to the table, let's <Link className="text-accent" href="/contact">connect</Link>!
+              <br />
+          <br/>
               I have a passion for biology, technology and problem-solving. I thrive in dynamic environments and am excited
               to contribute to innovative projects that make an impact. I am eager to take on challenges that allow me to leverage
-              my analytical mindset and technical expertise. If you’re looking for someone who brings both creativity and problem-solving
-              skills to the table, let's <Link className="text-accent" href="/contact">connect</Link>!
+              my analytical mindset and technical expertise.
 
             </p>
             {/* Social links */}
