@@ -10,7 +10,7 @@ import { myStats } from "@/constants/aboutme"
 export function Statistics() {
     const [showPrefix, setShowPrefix] = useState(false)
     return (
-        <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
+        <section className="py-4 md:pb-12 xl:pt-0">
             <div className="container mx-auto">
                 <div className="flex flex-wrap justify-around gap-6 max-w-[80vw] mx-auto xl:max-w-none">
                     {myStats.map((stat, index) => {

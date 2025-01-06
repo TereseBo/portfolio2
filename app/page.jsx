@@ -48,7 +48,7 @@ export default function Home() {
       <Skills />
       {/*Divider*/}
       <div className="container mx-auto">
-        <div className="border border-white/20 m-16"></div>
+        <div className="border border-white/20 md:m-16"></div>
       </div>
       <Statistics />
     </section>
