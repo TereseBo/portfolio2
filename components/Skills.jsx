@@ -4,9 +4,9 @@ import Link from "next/link"
 export function Skills() {
     return (
         <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
-            <div className="container mx-auto flex items-baseline justify-center ">
+            <div className="container mx-auto md:flex items-baseline justify-center ">
                 <div className="flex flex-col gap-1 items-center justify-start text-accent py-4 text-nowrap">
-                    <div className="text-xl w-[20px] h-[20px]">
+                    <div className="md:w-[20px] md:h-[20px]">
                     </div>
                     <p >
                         Tech stack:
